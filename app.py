@@ -3,7 +3,10 @@ import sqlite3
 from datetime import date
 
 class BhaiyaApp:
-    def __init__(self, db_path="Bhaiya.db"):
+    def __init__(self, db_path="db/Bhaiya.db"):
+        # app start hote hi sabse pehle database se connection banate hain
+        # currently using sqlite3, as it is lightweight and easy to set up , 
+        # furthe we can switch to a more robust database like PostgreSQL or MySQL if needed
         self.conn = sqlite3.connect(db_path, check_same_thread=False)
         self.cursor = self.conn.cursor()
 
