@@ -1,0 +1,19 @@
+# 🔐 Secret files
+.bhai_venv
+
+# 🛢️ Local database files
+*.bhaiya.db
+bhaiya.db
+
+# 🚫 Python cache
+__pycache__/
+*.pyc
+
+# 📦 Virtual environments (if any)
+.venv/
+env/
+venv/
+retail_env/
+
+# 🧪 Streamlit specific
+.streamlit/config.toml
